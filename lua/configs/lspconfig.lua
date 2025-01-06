@@ -13,7 +13,6 @@ local servers = {
   "clangd",
   "tailwindcss",
   "sqlls",
-  "shopify_theme_ls",
   "pyright",
   "postgres_lsp",
   "nginx_language_server",
