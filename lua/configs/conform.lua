@@ -1,12 +1,12 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    css = { "prettier" },
-    html = { "prettier" },
-    jsx = { "prettier" },
-    tsx = { "prettier" },
+    css = { "prettierd" },
+    html = { "prettierd" },
+    jsx = { "prettierd" },
+    tsx = { "prettierd" },
+    ts = { "prettierd" },
     cs = { "csharpier" },
-    sql = { "sql-formatter" },
   },
 
   format_on_save = {
