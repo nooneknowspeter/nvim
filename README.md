@@ -2,7 +2,7 @@
 
 ## install neovim and dependencies
 
-- [homebrew](/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)")
+- [homebrew](https://brew.sh/)
 - [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-package/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 
