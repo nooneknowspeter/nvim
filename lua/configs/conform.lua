@@ -12,6 +12,7 @@ local options = {
     cs = { "csharpier" },
     cpp = { "clang-format" },
     c = { "clang-format" },
+    python = { "isort", "black" },
   },
 
   format_on_save = {
