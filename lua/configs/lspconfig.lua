@@ -4,7 +4,25 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls", "dot-language-server", "ts_ls" }
+local servers = {
+  "html",
+  "cssls",
+  "csharp_ls",
+  "ts_ls",
+  "cmake",
+  "clangd",
+  "tailwindcss",
+  "sqlls",
+  "shopify_theme_ls",
+  "pyright",
+  "postgres_lsp",
+  "nginx_language_server",
+  "jsonls",
+  "graphql",
+  "glsl_analyzer",
+  "dockerls",
+  "docker-compose-language-service",
+}
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
