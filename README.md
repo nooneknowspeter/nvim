@@ -49,6 +49,7 @@ docker run -w /root -it --rm alpine:latest sh -uelic '
 - [lazyvim](https://github.com/LazyVim/LazyVim)
 - [lua](https://lua.org/)
 - [mason](https://github.com/williamboman/mason.nvim)
+- [mason dap adapter](https://github.com/jay-babu/mason-nvim-dap.nvim)
 - [multicursors](https://github.com/smoka7/multicursors.nvim)
 - [nerdfonts](https://www.nerdfonts.com/)
 - [neovim](https://github.com/neovim/neovim)
