@@ -53,4 +53,5 @@ docker run -w /root -it --rm alpine:latest sh -uelic '
 - [neovim](https://github.com/neovim/neovim)
 - [neovimlsp](https://github.com/neovim/nvim-lspconfig)
 - [nvchad](https://github.com/NvChad/NvChad)
+- [nvim dap](https://github.com/mfussenegger/nvim-dap)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
