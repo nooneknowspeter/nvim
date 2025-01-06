@@ -1,12 +1,17 @@
-# nooneknows neovim configuration
+# nooneknows neovim configuration / setup
 
 ### linux / macos
 ```
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
 git clone https://github.com/nooneknowspeter/nvim-setup.git ~/.config/nvim && nvim
 ```
 ### windows
 ```
-git clone https://github.com/nooneknowspeter/nvim-setup.git $ENV:USERPROFILE\AppData\Local\nvim && nvim
+rm -Force ~\AppData\Local\nvim
+rm -Force ~\AppData\Local\nvim-data
+git clone https://github.com/nooneknowspeter/nvim-setup.git C:\Users\$ENV:USERNAME\AppData\Local\nvim && nvim
 
 ```
 ## stack / plugins
@@ -14,6 +19,7 @@ git clone https://github.com/nooneknowspeter/nvim-setup.git $ENV:USERPROFILE\App
 - [lazyvim](https://github.com/LazyVim/LazyVim)
 - [lua](https://lua.org/)
 - [multicursors](https://github.com/smoka7/multicursors.nvim)
+- [nerdfonts](https://www.nerdfonts.com/)
 - [neovim](https://github.com/neovim/neovim)
 - [neovimlsp](https://github.com/neovim/nvim-lspconfig)
 - [nvchad](https://github.com/NvChad/NvChad)
