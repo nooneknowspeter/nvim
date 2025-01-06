@@ -42,6 +42,7 @@ docker run -w /root -it --rm alpine:latest sh -uelic '
 ## stack / plugins
 
 - [conform](https://github.com/stevearc/conform.nvim)
+- [hydra](https://github.com/anuvyklack/hydra.nvim)
 - [lazyvim](https://github.com/LazyVim/LazyVim)
 - [lua](https://lua.org/)
 - [multicursors](https://github.com/smoka7/multicursors.nvim)
