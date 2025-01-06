@@ -5,7 +5,7 @@ local options = {
     html = { "prettier" },
     jsx = { "prettier" },
     tsx = { "prettier" },
-    csharp = { "csharpier" },
+    cs = { "csharpier" },
     sql = { "sql-formatter" },
   },
 
