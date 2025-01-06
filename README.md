@@ -22,6 +22,7 @@ rm -rf ~/.local/state/nvim
 rm -rf ~/.local/share/nvim
 git clone https://github.com/nooneknowspeter/nvim-setup.git ~/.config/nvim && nvim
 ```
+
 ### windows
 
 ```
@@ -30,6 +31,7 @@ rm -Force ~\AppData\Local\nvim-data
 git clone https://github.com/nooneknowspeter/nvim-setup.git C:\Users\$ENV:USERNAME\AppData\Local\nvim && nvim
 
 ```
+
 ### docker
 
 ```
@@ -39,6 +41,7 @@ docker run -w /root -it --rm alpine:latest sh -uelic '
   nvim
   '
 ```
+
 ## stack / plugins
 
 - [conform](https://github.com/stevearc/conform.nvim)
