@@ -1,1 +1,1 @@
-#nooneknowspeter neovim configuration
+# nooneknowspeter neovim configuration
