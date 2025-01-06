@@ -1,0 +1,1 @@
+#nooneknowspeter neovim configuration
