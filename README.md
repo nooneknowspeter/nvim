@@ -63,6 +63,7 @@ docker run -w /root -it --rm alpine:latest sh -uelic '
 - [nvchad](https://github.com/NvChad/NvChad)
 - [nvim autopairs](https://github.com/windwp/nvim-autopairs)
 - [nvim dap](https://github.com/mfussenegger/nvim-dap)
+- [nvim surround](https://github.com/kylechui/nvim-surround)
 - [nvim treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [nvim plenery](https://github.com/nvim-lua/plenary.nvim)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)

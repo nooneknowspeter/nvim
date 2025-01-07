@@ -41,7 +41,7 @@ return {
     opts = require "configs.conform",
   },
 
-  -- json parser
+  -- lua json
   {
     "Joakker/lua-json5",
     event = "VeryLazy",
