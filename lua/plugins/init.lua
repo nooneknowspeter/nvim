@@ -82,11 +82,23 @@ return {
       "theHamsta/nvim-dap-virtual-text",
       "jay-babu/mason-nvim-dap.nvim",
       "nvim-neotest/nvim-nio",
-      "mfussenegger/nvim-dap-python",
-      "mxsdev/nvim-dap-vscode-js",
     },
     config = function()
       require "configs.dap"
+    end,
+  },
+
+  -- nvim dap python
+  {
+    "mfussenegger/nvim-dap-python",
+    event = "VeryLazy",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+    },
+    config = function()
+      local mason_registry = require "mason-registry"
+
+      require("dap-python").setup(mason_registry.get_package("debugpy"):get_install_path() .. "/venv/bin/python")
     end,
   },
 

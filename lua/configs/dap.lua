@@ -7,7 +7,7 @@ local mason_registry = require "mason-registry"
 mason.setup()
 
 mason_dap.setup {
-  ensure_installed = { "python", "node2", "chrome", "js", "codelldb", "bash" },
+  ensure_installed = { "python", "js", "codelldb", "cppdb", "coreclr" },
   automatic_installation = true,
 }
 
@@ -28,6 +28,8 @@ end
 -- breakpoint icon
 vim.fn.sign_define("DapBreakpoint", { text = "👾" })
 
+-- debugging
+
 -- codelldb
 dap.adapters.lldb = {
   type = "executable",
@@ -42,17 +44,6 @@ dap.adapters.cppdbg = {
   command = mason_registry.get_package("cpptools"):get_install_path() .. "/extension/debugAdapters/bin/OpenDebugAD7",
 }
 
--- js debug adapter; node, chrome, edge, node-terminal
-require("dap-vscode-js").setup {
-  -- node_path = "node", -- Path of node executable. Defaults to $NODE_PATH, and then "node"
-  -- debugger_path = "(runtimedir)/site/pack/packer/opt/vscode-js-debug", -- Path to vscode-js-debug installation.
-  -- debugger_cmd = { "js-debug-adapter" }, -- Command to use to launch the debug server. Takes precedence over `node_path` and `debugger_path`.
-  adapters = { "pwa-node", "pwa-chrome", "pwa-msedge", "node-terminal", "pwa-extensionHost" }, -- which adapters to register in nvim-dap
-  -- log_file_path = "(stdpath cache)/dap_vscode_js.log" -- Path for file logging
-  -- log_file_level = false -- Logging level for output to file. Set to false to disable file logging.
-  -- log_console_level = vim.log.levels.ERROR -- Logging level for output to console. Set to false to disable console output.
-}
-
 -- netcore db
 dap.adapters.coreclr = {
   type = "executable",
@@ -60,5 +51,59 @@ dap.adapters.coreclr = {
   args = { "--interpreter=vscode" },
 }
 
--- python
-require("dap-python").setup(mason_registry.get_package("debugpy"):get_install_path() "/venv/bin/python")
+-- js debug adapter; chrome, node, msedge
+local js_dap_root = mason_registry.get_package("js-debug-adapter"):get_install_path()
+  .. "/js-debug/src/dapDebugServer.js"
+
+dap.adapters["pwa-node"] = {
+  type = "server",
+  host = "localhost",
+  port = "${port}",
+  executable = {
+    command = "node",
+    args = { js_dap_root, "${port}" },
+  },
+}
+
+dap.adapters["pwa-chrome"] = {
+  type = "server",
+  host = "localhost",
+  port = "${port}",
+  executable = {
+    command = "node",
+    args = { js_dap_root, "${port}" },
+  },
+}
+
+dap.adapters["pwa-msedge"] = {
+
+  type = "server",
+  host = "localhost",
+  port = "${port}",
+  executable = {
+    command = "node",
+    args = { js_dap_root, "${port}" },
+  },
+}
+
+dap.adapters["node-terminal"] = {
+
+  type = "server",
+  host = "localhost",
+  port = "${port}",
+  executable = {
+    command = "node",
+    args = { js_dap_root, "${port}" },
+  },
+}
+
+dap.adapters["pwa-extensionHost"] = {
+
+  type = "server",
+  host = "localhost",
+  port = "${port}",
+  executable = {
+    command = "node",
+    args = { js_dap_root, "${port}" },
+  },
+}
