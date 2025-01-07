@@ -44,8 +44,13 @@ docker run -w /root -it --rm alpine:latest sh -uelic '
 
 ## stack / plugins
 
+- [better escape](https://github.com/max397574/better-escape.nvim)
+- [cmake tools](https://github.com/Civitasv/cmake-tools.nvim)
 - [conform](https://github.com/stevearc/conform.nvim)
+- [git signs](https://github.com/lewis6991/gitsigns.nvim)
 - [hydra](https://github.com/anuvyklack/hydra.nvim)
+- [indent blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [lua json](https://github.com/Joakker/lua-json5)
 - [lazyvim](https://github.com/LazyVim/LazyVim)
 - [lua](https://lua.org/)
 - [mason](https://github.com/williamboman/mason.nvim)
@@ -53,7 +58,12 @@ docker run -w /root -it --rm alpine:latest sh -uelic '
 - [multicursors](https://github.com/smoka7/multicursors.nvim)
 - [nerdfonts](https://www.nerdfonts.com/)
 - [neovim](https://github.com/neovim/neovim)
+- [neovim colorizer](https://github.com/NvChad/nvim-colorizer.lua)
 - [neovimlsp](https://github.com/neovim/nvim-lspconfig)
 - [nvchad](https://github.com/NvChad/NvChad)
+- [nvim autopairs](https://github.com/windwp/nvim-autopairs)
 - [nvim dap](https://github.com/mfussenegger/nvim-dap)
+- [nvim treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [nvim plenery](https://github.com/nvim-lua/plenary.nvim)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
+- [whichkey](https://github.com/folke/which-key.nvim)
