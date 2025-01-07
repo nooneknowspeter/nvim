@@ -37,6 +37,12 @@ dap.adapters.lldb = {
   name = "lldb",
 }
 
+dap.adapters.codelldb = {
+  type = "executable",
+  command = mason_registry.get_package("codelldb"):get_install_path() .. "/codelldb", -- adjust as needed, must be absolute path
+  name = "lldb",
+}
+
 -- cpptools
 dap.adapters.cppdbg = {
   id = "cppdbg",
