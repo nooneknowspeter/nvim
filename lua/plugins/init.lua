@@ -77,6 +77,7 @@ return {
     "rcarriga/nvim-dap-ui",
     event = "VeryLazy",
     dependencies = {
+      "williamboman/mason.nvim",
       "mfussenegger/nvim-dap",
       "theHamsta/nvim-dap-virtual-text",
       "jay-babu/mason-nvim-dap.nvim",
