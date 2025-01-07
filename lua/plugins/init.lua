@@ -82,8 +82,6 @@ return {
       "theHamsta/nvim-dap-virtual-text",
       "jay-babu/mason-nvim-dap.nvim",
       "nvim-neotest/nvim-nio",
-      "vadimcn/codelldb",
-      "microsoft/vscode-cpptools",
     },
     config = function()
       require "configs.dap"
