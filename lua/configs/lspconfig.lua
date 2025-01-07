@@ -21,6 +21,7 @@ local servers = {
   "glsl_analyzer",
   "dockerls",
 }
+
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config

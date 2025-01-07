@@ -17,6 +17,7 @@ return {
   -- nvim treesitter
   {
     "nvim-treesitter/nvim-treesitter",
+    event = "VeryLazy",
     opts = {
       ensure_installed = {
         "vim",
@@ -58,35 +59,31 @@ return {
     lazy = false,
   },
 
+  -- plenery
+  {
+    "nvim-lua/plenary.nvim",
+  },
+
+  -- json parser
+  {
+    "Joakker/lua-json5",
+    event = "VeryLazy",
+    lazy = true,
+    build = vim.fn.has "win32" == 1 and "powershell ./install.ps1" or "./install.sh",
+  },
+
   -- nvim dap
   {
-    "mfussenegger/nvim-dap",
+    "rcarriga/nvim-dap-ui",
+    event = "VeryLazy",
     dependencies = {
-      "rcarriga/nvim-dap-ui",
+      "mfussenegger/nvim-dap",
       "theHamsta/nvim-dap-virtual-text",
       "jay-babu/mason-nvim-dap.nvim",
+      "nvim-neotest/nvim-nio",
     },
     config = function()
-      require("mason-nvim-dap").setup {
-        automatic_config = true, -- automatically configure based on mason-installed daps
-        project_based_config = true, -- enable project-based configurations
-      }
-
-      -- optionally, set up language-specific configurations based on project context
-      -- (e.g., from .vscode directory or other project files)
-      require("dap").configurations = function()
-        local project_dap_config = vim.fn.findfile(".vscode/launch.json", vim.fn.expand "%:p:h")
-        if project_dap_config ~= "" then
-          -- load the project-specific config
-          local config = vim.fn.json_decode(vim.fn.readfile(project_dap_config))
-          return config
-        else
-          -- default or global config
-          return {
-            -- default configurations for common languages, etc.
-          }
-        end
-      end
+      require "configs.dap"
     end,
   },
 
@@ -94,6 +91,7 @@ return {
   {
     "Civitasv/cmake-tools.nvim",
     lazy = true,
+    event = "VeryLazy",
     init = function()
       local loaded = false
       local function check()
