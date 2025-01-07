@@ -13,6 +13,8 @@ local options = {
     cpp = { "clang-format" },
     c = { "clang-format" },
     python = { "isort", "black" },
+    graphql = { "pretterd" },
+    markdown = { "pretterd" },
   },
 
   format_on_save = {

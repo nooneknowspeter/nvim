@@ -56,6 +56,21 @@ docker run -w /root -it --rm alpine:latest sh -uelic '
   '
 ```
 
+## updating
+
+### updating nvim
+```
+brew update
+upgrade neovim
+```
+
+### updating nvim packages
+```
+:Lazy sync
+:MasonUpdate
+:DapInstall <dap_name>
+```
+
 ## stack / plugins
 
 - [better escape](https://github.com/max397574/better-escape.nvim)
