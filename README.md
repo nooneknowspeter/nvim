@@ -4,6 +4,16 @@
 
 ![](https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(2).png)
 
+## language support (dap, formatters, linters)
+- C#
+- C++
+- CSS
+- GLSL
+- HTML
+- JavaScript
+- Python
+- TypeScript
+
 ## install neovim and dependencies
 
 - [homebrew](https://brew.sh/)
