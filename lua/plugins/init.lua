@@ -49,6 +49,17 @@ return {
     build = vim.fn.has "win32" == 1 and "powershell ./install.ps1" or "./install.sh",
   },
 
+  -- markdown previewer
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && npm install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  },
+
   -- multicursors
   {
     "smoka7/multicursors.nvim",
@@ -70,11 +81,10 @@ return {
 
   -- neovim lsp
   {
-    "max397574/better-escape.nvim",
+    "neovim/nvim-lspconfig",
     config = function()
-      require("better_escape").setup()
+      require "configs.lspconfig"
     end,
-    lazy = false,
   },
 
   -- nvim treesitter
@@ -113,6 +123,15 @@ return {
       local mason_registry = require "mason-registry"
 
       require("dap-python").setup(mason_registry.get_package("debugpy"):get_install_path() .. "/venv/bin/python")
+    end,
+  },
+
+  -- nvim lint
+  {
+    "mfussenegger/nvim-lint",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      require "configs.lsplint"
     end,
   },
 
