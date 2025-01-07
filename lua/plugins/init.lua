@@ -18,17 +18,7 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     event = "VeryLazy",
-    opts = {
-      ensure_installed = {
-        "vim",
-        "lua",
-        "vimdoc",
-        "html",
-        "css",
-        "cpp",
-        "c",
-      },
-    },
+    opts = require "configs.treesitter",
   },
 
   -- multicursors
