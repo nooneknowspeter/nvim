@@ -20,7 +20,6 @@ local servers = {
   "graphql",
   "glsl_analyzer",
   "dockerls",
-  "docker-compose-language-service",
 }
 
 local nvlsp = require "nvchad.configs.lspconfig"
