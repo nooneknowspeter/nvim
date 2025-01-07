@@ -1,5 +1,9 @@
 # nooneknows neovim configuration / setup
 
+![](https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(1).png)
+
+![](https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(2).png)
+
 ## install neovim and dependencies
 
 - [homebrew](https://brew.sh/)
