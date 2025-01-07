@@ -107,3 +107,25 @@ dap.adapters["pwa-extensionHost"] = {
     args = { js_dap_root, "${port}" },
   },
 }
+
+dap.adapters["chrome"] = {
+
+  type = "server",
+  host = "localhost",
+  port = "${port}",
+  executable = {
+    command = "node",
+    args = { js_dap_root, "${port}" },
+  },
+}
+
+dap.adapters["node"] = {
+
+  type = "server",
+  host = "localhost",
+  port = "${port}",
+  executable = {
+    command = "node",
+    args = { js_dap_root, "${port}" },
+  },
+}
