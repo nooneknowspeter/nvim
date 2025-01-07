@@ -20,6 +20,7 @@ local servers = {
   "graphql",
   "glsl_analyzer",
   "dockerls",
+  "eslint-lsp",
 }
 
 local nvlsp = require "nvchad.configs.lspconfig"
