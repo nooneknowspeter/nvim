@@ -109,5 +109,7 @@ upgrade neovim
 - [nvim surround](https://github.com/kylechui/nvim-surround)
 - [nvim treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [nvim plenery](https://github.com/nvim-lua/plenary.nvim)
+- [remote nvim](https://github.com/amitds1997/remote-nvim.nvim)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
+- [undotree](https://github.com/mbbill/undotree)
 - [whichkey](https://github.com/folke/which-key.nvim)
