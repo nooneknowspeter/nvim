@@ -27,14 +27,20 @@
 - [ohmypsh](https://github.com/jandedobbeleer/oh-my-posh)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 
+### debian / ubuntu
+
 ```
 sudo apt upgrade
 sudo apt update
 sudo apt install build-essential
 ```
 
-## terminal customization
+### arch
 
+```
+sudo pacman -Syu
+sudo pacman -S base-devel
+```
 
 ## install neovim configs
 
