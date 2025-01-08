@@ -1,25 +1,30 @@
 # nooneknows neovim configuration / setup
 
-![quick preview](https://i.imgur.com/X1Di0VJ.mp4)
+![](https/i.imgur.com/X1Di0VJ.mp4)
 
 ![](https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(1).png)
 
 ![](https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(2).png)
 
 ## language support (dap, formatters, linters)
+
 - C#
 - C++
 - CSS
 - GLSL
 - HTML
 - JavaScript
+- Lua
 - Python
 - TypeScript
 
 ## install neovim and dependencies
 
 - [homebrew](https://brew.sh/)
+- [lua && lua rocks <= v5.1.x](https://lua.org/)
 - [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-package/)
+- [nerdfonts](https://www.nerdfonts.com/)
+- [ohmypsh](https://github.com/jandedobbeleer/oh-my-posh)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ```
@@ -27,6 +32,9 @@ sudo apt upgrade
 sudo apt update
 sudo apt install build-essential
 ```
+
+## terminal customization
+
 
 ## install neovim configs
 
@@ -61,19 +69,21 @@ docker run -w /root -it --rm alpine:latest sh -uelic '
 ## updating
 
 ### updating nvim
+
 ```
 brew update
 upgrade neovim
 ```
 
 ### updating nvim packages
+
 ```
 :Lazy sync
 :MasonUpdate
 :DapInstall <dap_name>
 ```
 
-## stack / plugins
+## neovim plugins
 
 - [better escape](https://github.com/max397574/better-escape.nvim)
 - [cmake tools](https://github.com/Civitasv/cmake-tools.nvim)
@@ -83,12 +93,10 @@ upgrade neovim
 - [indent blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [lua json](https://github.com/Joakker/lua-json5)
 - [lazyvim](https://github.com/LazyVim/LazyVim)
-- [lua](https://lua.org/)
 - [markdown previewer](https://github.com/iamcco/markdown-preview.nvim)
 - [mason](https://github.com/williamboman/mason.nvim)
 - [mason dap adapter](https://github.com/jay-babu/mason-nvim-dap.nvim)
 - [multicursors](https://github.com/smoka7/multicursors.nvim)
-- [nerdfonts](https://www.nerdfonts.com/)
 - [neovim](https://github.com/neovim/neovim)
 - [neovim colorizer](https://github.com/NvChad/nvim-colorizer.lua)
 - [neovim lsp](https://github.com/neovim/nvim-lspconfig)

@@ -53,7 +53,7 @@ return {
   {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    build = "cd app && npm install",
+    build = "cd app && yarn install",
     init = function()
       vim.g.mkdp_filetypes = { "markdown" }
     end,
@@ -149,4 +149,20 @@ return {
   {
     "nvim-lua/plenary.nvim",
   },
+
+  -- remote nvim
+  {
+    "amitds1997/remote-nvim.nvim",
+    event = "VeryLazy",
+    version = "*", -- Pin to GitHub releases
+    dependencies = {
+      "nvim-lua/plenary.nvim", -- For standard functions
+      "MunifTanjim/nui.nvim", -- To build the plugin UI
+      "nvim-telescope/telescope.nvim", -- For picking b/w different remote methods
+    },
+    config = true,
+  },
+
+  -- undo tree
+  { "mbbill/undotree", event = "VeryLazy" },
 }

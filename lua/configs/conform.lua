@@ -14,7 +14,7 @@ local options = {
     c = { "clang-format" },
     python = { "isort", "black" },
     graphql = { "pretterd" },
-    markdown = { "pretterd" },
+    md = { "eslint_d", "pretterd" },
   },
 
   format_on_save = {
