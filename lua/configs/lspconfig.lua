@@ -1,35 +1,28 @@
--- load defaults i.e lua_lsp
-require("nvchad.configs.lspconfig").defaults()
+-- mason setup
+require("mason").setup()
+require("mason-lspconfig").setup()
 
-local lspconfig = require "lspconfig"
-
--- EXAMPLE
-local servers = {
-  "html",
-  "cssls",
-  "csharp_ls",
-  "ts_ls",
-  "cmake",
-  "clangd",
-  "tailwindcss",
-  "sqlls",
-  "pyright",
-  "postgres_lsp",
-  "nginx_language_server",
-  "jsonls",
-  "graphql",
-  "glsl_analyzer",
-  "dockerls",
-  "marksman",
+-- mason lspconfig setup
+require("mason-lspconfig").setup {
+  ensure_installed = { "lua_ls" }, -- lsp servers to auto-install
 }
 
-local nvlsp = require "nvchad.configs.lspconfig"
+-- mason lspconfig setup
+require("mason-lspconfig").setup_handlers {
+  function(server_name)
+    require("lspconfig")[server_name].setup {}
+  end,
 
--- lsps with default config
-for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-    on_attach = nvlsp.on_attach,
-    on_init = nvlsp.on_init,
-    capabilities = nvlsp.capabilities,
-  }
-end
+  ["lua_ls"] = function()
+    local lspconfig = require "lspconfig"
+    lspconfig.lua_ls.setup {
+      settings = {
+        Lua = {
+          diagostics = {
+            globals = { "vim" },
+          },
+        },
+      },
+    }
+  end,
+}

@@ -8,6 +8,8 @@
 
 ## language support (dap, formatters, linters)
 
+supports all langauges
+
 - C#
 - C++
 - CSS
@@ -16,7 +18,10 @@
 - JavaScript
 - Lua
 - Python
+- Rust
+- SQL
 - TypeScript
+- and more
 
 ## install neovim and dependencies
 
@@ -89,6 +94,12 @@ upgrade neovim
 :Lazy sync
 :MasonUpdate
 :DapInstall <dap_name>
+```
+
+## nvim as git editor
+
+```
+git config --global core.editor "nvim"
 ```
 
 ## neovim plugins

@@ -34,13 +34,6 @@ return {
     opts = {},
   },
 
-  -- conform
-  {
-    "stevearc/conform.nvim",
-    event = "BufWritePre", -- uncomment for format on save
-    opts = require "configs.conform",
-  },
-
   -- markdown previewer
   {
     "iamcco/markdown-preview.nvim",
@@ -50,16 +43,6 @@ return {
       vim.g.mkdp_filetypes = { "markdown" }
     end,
     ft = { "markdown" },
-  },
-
-  -- mason
-  -- mason lsp config
-  {
-    "williamboman/mason-lspconfig.nvim",
-    event = "VeryLazy",
-    config = function()
-      require "configs.masonlspconfig"
-    end,
   },
 
   -- multicursors
@@ -81,23 +64,37 @@ return {
     },
   },
 
-  -- neovim lsp
+  -- language servers; neovim lsp
   {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
     config = function()
       require "configs.lspconfig"
     end,
   },
 
-  -- nvim treesitter
+  -- formatting and linting; null ls
+  {
+    "jay-babu/mason-null-ls.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    dependencies = {
+      "williamboman/mason.nvim",
+      "jose-elias-alvarez/null-ls.nvim",
+    },
+    config = function()
+      require "configs.nullls" -- require your null-ls config here (example below)
+    end,
+  },
+
+  -- syntax highlighting; nvim treesitter
   {
     "nvim-treesitter/nvim-treesitter",
     event = "VeryLazy",
     opts = require "configs.treesitter",
   },
 
-  -- debugging
-  -- nvim dap, dap ui
+  -- debugging; nvim dap, dap ui
   {
     "rcarriga/nvim-dap-ui",
     event = "VeryLazy",
@@ -110,30 +107,6 @@ return {
     },
     config = function()
       require "configs.dap"
-    end,
-  },
-
-  -- nvim python
-  {
-
-    "mfussenegger/nvim-dap-python",
-    event = "VeryLazy",
-    dependencies = {
-      "mfussenegger/nvim-dap",
-    },
-    config = function()
-      local mason_registry = require "mason-registry"
-
-      require("dap-python").setup(mason_registry.get_package("debugpy"):get_install_path() .. "/venv/bin/python")
-    end,
-  },
-
-  -- nvim lint
-  {
-    "mfussenegger/nvim-lint",
-    event = { "BufReadPre", "BufNewFile" },
-    config = function()
-      require "configs.lsplint"
     end,
   },
 

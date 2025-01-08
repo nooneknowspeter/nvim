@@ -2,30 +2,22 @@ local mason = require "mason"
 local mason_dap = require "mason-nvim-dap"
 local dap = require "dap"
 local dapui = require "dapui"
-local mason_registry = require "mason-registry"
+-- local mason_registry = require "mason-registry"
 
 mason.setup()
 
 mason_dap.setup {
-  ensure_installed = { "python", "js", "codelldb", "cppdb", "coreclr" },
+  ensure_installed = { "stylua" },
   automatic_installation = true,
   handlers = {
     function(config)
       -- default handler for all sources without a specific handler
       require("mason-nvim-dap").default_setup(config)
     end,
-    python = function(config)
-      -- custom handler for python debug adapter
-      config.adapters = {
-        type = "executable",
-        command = "/usr/bin/python3",
-        args = { "-m", "debugpy.adapter" },
-      }
-      require("mason-nvim-dap").default_setup(config) -- keep default functionality
-    end,
   },
 }
 
+-- dap ui setup
 dapui.setup()
 dap.listeners.before.attach.dapui_config = function()
   dapui.open()
