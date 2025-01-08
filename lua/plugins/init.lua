@@ -40,7 +40,7 @@ return {
     event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
-  
+
   -- markdown previewer
   {
     "iamcco/markdown-preview.nvim",
@@ -50,6 +50,16 @@ return {
       vim.g.mkdp_filetypes = { "markdown" }
     end,
     ft = { "markdown" },
+  },
+
+  -- mason
+  -- mason lsp config
+  {
+    "williamboman/mason-lspconfig.nvim",
+    event = "VeryLazy",
+    config = function()
+      require "configs.masonlspconfig"
+    end,
   },
 
   -- multicursors
