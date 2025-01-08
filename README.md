@@ -2,9 +2,9 @@
 
 ![](https/i.imgur.com/X1Di0VJ.mp4)
 
-![](https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(1).png)
+![](<https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(1).png>)
 
-![](https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(2).png)
+![](<https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(2).png>)
 
 ## language support (dap, formatters, linters)
 
@@ -108,6 +108,9 @@ git config --global core.editor "nvim"
 
 - [better escape](https://github.com/max397574/better-escape.nvim)
 - [cmake tools](https://github.com/Civitasv/cmake-tools.nvim)
+- [cmp nvim lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+- [dadbod](https://github.com/tpop/vim-dadbod)
+- [dadbod ui](https://github.com/hristijanhusak/vim-dadbod-ui)
 - [git signs](https://github.com/lewis6991/gitsigns.nvim)
 - [hydra](https://github.com/anuvyklack/hydra.nvim)
 - [indent blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
