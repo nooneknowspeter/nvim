@@ -20,11 +20,13 @@
 
 ## install neovim and dependencies
 
+- [dotnet](https://dotnet.microsoft.com/en-us/)
 - [homebrew](https://brew.sh/)
 - [lua && lua rocks <= v5.1.x](https://lua.org/)
 - [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-package/)
 - [nerdfonts](https://www.nerdfonts.com/)
 - [ohmypsh](https://github.com/jandedobbeleer/oh-my-posh)
+- [python >= 3.8 <= 3.12](https://www.python.org/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ### debian / ubuntu
