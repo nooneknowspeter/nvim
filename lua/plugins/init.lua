@@ -40,15 +40,7 @@ return {
     event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
-
-  -- lua json
-  {
-    "Joakker/lua-json5",
-    event = "VeryLazy",
-    lazy = true,
-    build = vim.fn.has "win32" == 1 and "powershell ./install.ps1" or "./install.sh",
-  },
-
+  
   -- markdown previewer
   {
     "iamcco/markdown-preview.nvim",
