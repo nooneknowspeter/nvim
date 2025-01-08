@@ -1,13 +1,4 @@
 local options = {
-  ensure_installed = {
-    "vim",
-    "lua",
-    "vimdoc",
-    "html",
-    "css",
-    "cpp",
-    "c",
-  },
-}
+  auto_install = true}
 
 return options

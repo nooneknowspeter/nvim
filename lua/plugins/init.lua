@@ -34,6 +34,11 @@ return {
     opts = {},
   },
 
+  -- cmp nvim lsp
+  {
+    "hrsh7th/cmp-nvim-lsp",
+  },
+
   -- markdown previewer
   {
     "iamcco/markdown-preview.nvim",
@@ -66,9 +71,9 @@ return {
 
   -- language servers; neovim lsp
   {
-    "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig",
+    event = "VeryLazy",
+    dependencies = { "williamboman/mason.nvim", "neovim/nvim-lspconfig" },
     config = function()
       require "configs.lspconfig"
     end,
@@ -76,14 +81,15 @@ return {
 
   -- formatting and linting; null ls
   {
-    "jay-babu/mason-null-ls.nvim",
+    "nvimtools/none-ls.nvim",
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
       "williamboman/mason.nvim",
-      "jose-elias-alvarez/null-ls.nvim",
+      "jay-babu/mason-null-ls.nvim",
+      "nvim-lua/plenary.nvim",
     },
     config = function()
-      require "configs.nullls" -- require your null-ls config here (example below)
+      require "configs.nullls"
     end,
   },
 
