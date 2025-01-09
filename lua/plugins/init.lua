@@ -142,7 +142,7 @@ return {
       "nvim-lua/plenary.nvim",
     },
     config = function()
-      require "configs.nullls"
+      require "configs.null-ls"
     end,
   },
 
@@ -175,7 +175,7 @@ return {
     version = "*", -- use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
     config = function()
-      require "configs.nvimsurround"
+      require "configs.nvim-surround"
     end,
   },
 
@@ -206,6 +206,13 @@ return {
       -- refer to the configuration section below
       -- or leave empty for defaults
     },
+  },
+
+  -- todo comments
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = require "configs.todo-comments",
   },
 
   -- undo tree
