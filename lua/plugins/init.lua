@@ -276,8 +276,12 @@ return {
   },
 
   -- undo tree
-  { "mbbill/undotree", event = "VeryLazy" },
+  {
+    "mbbill/undotree",
     enabled = true,
+    event = "VeryLazy",
+  },
+
   -- vim tmux navigator
   {
     "christoomey/vim-tmux-navigator",
