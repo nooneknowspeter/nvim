@@ -34,8 +34,16 @@ M.nvdash = {
 
 M.ui = {
   statusline = {
+    -- default/vscode/vscode_colored/minimal
     theme = "vscode_colored",
+    separator_style = "default",
+    order = nil,
+    modules = nil,
   },
+}
+
+M.cheetsheet = {
+  theme = "simple", -- simple/grid
 }
 
 return M

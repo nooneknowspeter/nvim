@@ -52,6 +52,16 @@ return {
     end,
   },
 
+  -- fine cmdline
+  {
+    "vonheikemen/fine-cmdline.nvim",
+    event = "VeryLazy",
+    dependencies = { "MunifTanjim/nui.nvim" },
+    config = function()
+      require "lua.configs.finecmdline"
+    end,
+  },
+
   -- lazygit vim
   {
     "kdheepak/lazygit.nvim",
@@ -113,29 +123,15 @@ return {
       require "configs.lspconfig"
     end,
   },
-  -- noice
-  {
-    "folke/noice.nvim",
-    event = "VeryLazy",
-    opts = {},
-    dependencies = {
-      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-      "MunifTanjim/nui.nvim",
-      -- OPTIONAL:
-      --   `nvim-notify` is only needed, if you want to use the notification view.
-      --   If not available, we use `mini` as the fallback
-      "rcarriga/nvim-notify",
-    },
-  },
 
   -- notify
   {
     "rcarriga/nvim-notify",
-    event = "VeryLazy",
-    opts = {
-      background_colour = "#FFFFFF",
-    },
+    config = function()
+      require "configs.notify" -- load your notify configuration
+    end,
   },
+
   -- formatting and linting; null ls
   {
     "nvimtools/none-ls.nvim",
