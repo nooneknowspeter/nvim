@@ -27,6 +27,7 @@ supports multiple langauges including:
 
 - [dotnet](https://dotnet.microsoft.com/en-us/)
 - [homebrew](https://brew.sh/)
+- [lazygit](https://github.com/jesseduffield/lazygit)
 - [lua <= v5.1.x](https://lua.org/)
 - [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-package/)
 - [nerdfonts](https://www.nerdfonts.com/)
@@ -115,6 +116,7 @@ git config --global core.editor "nvim"
 - [hydra](https://github.com/anuvyklack/hydra.nvim)
 - [indent blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [lua json](https://github.com/Joakker/lua-json5)
+- [lazygit vim](https://github.com/kdheepak/lazygit.nvim)
 - [lazyvim](https://github.com/LazyVim/LazyVim)
 - [markdown previewer](https://github.com/iamcco/markdown-preview.nvim)
 - [mason](https://github.com/williamboman/mason.nvim)
