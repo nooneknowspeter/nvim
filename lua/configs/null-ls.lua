@@ -16,6 +16,7 @@ mason_null_ls.setup {
     hover = true,
   },
   handlers = {},
+  debug = true,
 }
 
 -- format on save
