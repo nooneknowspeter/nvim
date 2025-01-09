@@ -2,6 +2,7 @@ return {
   -- better escape; escape using key combo (currently set to jk)
   {
     "max397574/better-escape.nvim",
+    enabled = true,
     config = function()
       require("better_escape").setup()
     end,
@@ -11,6 +12,7 @@ return {
   -- cmake tools
   {
     "Civitasv/cmake-tools.nvim",
+    enabled = true,
     lazy = true,
     event = "VeryLazy",
     init = function()
@@ -41,9 +43,11 @@ return {
     opts = {},
   },
 
+    enabled = true,
   -- dadbod; database tools
   {
     "kristijanhusak/vim-dadbod-ui",
+    enabled = true,
     dependencies = {
       { "tpope/vim-dadbod", lazy = true },
     },
@@ -62,6 +66,7 @@ return {
   -- fine cmdline
   {
     "vonheikemen/fine-cmdline.nvim",
+    enabled = false,
     event = "VeryLazy",
     dependencies = { "MunifTanjim/nui.nvim" },
     config = function()
@@ -94,6 +99,7 @@ return {
   -- markdown previewer
   {
     "iamcco/markdown-preview.nvim",
+    enabled = true,
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     build = "cd app && yarn install",
     init = function()
@@ -102,9 +108,11 @@ return {
     ft = { "markdown" },
   },
 
+    enabled = true,
   -- multicursors
   {
     "smoka7/multicursors.nvim",
+    enabled = true,
     event = "VeryLazy",
     dependencies = {
       "nvimtools/hydra.nvim",
@@ -124,6 +132,7 @@ return {
   -- language servers; neovim lsp
   {
     "williamboman/mason-lspconfig.nvim",
+    enabled = true,
     event = "VeryLazy",
     dependencies = { "williamboman/mason.nvim", "neovim/nvim-lspconfig" },
     config = function()
@@ -134,6 +143,7 @@ return {
   -- notify
   {
     "rcarriga/nvim-notify",
+    enabled = true,
     config = function()
       require "configs.notify" -- load your notify configuration
     end,
@@ -142,6 +152,7 @@ return {
   -- formatting and linting; null ls
   {
     "nvimtools/none-ls.nvim",
+    enabled = true,
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
       "williamboman/mason.nvim",
@@ -156,6 +167,7 @@ return {
   -- syntax highlighting; nvim treesitter
   {
     "nvim-treesitter/nvim-treesitter",
+    enabled = true,
     event = "VeryLazy",
     opts = require "configs.treesitter",
   },
@@ -163,6 +175,7 @@ return {
   -- debugging; nvim dap, dap ui
   {
     "rcarriga/nvim-dap-ui",
+    enabled = true,
     event = "VeryLazy",
     dependencies = {
       "williamboman/mason.nvim",
@@ -179,6 +192,7 @@ return {
   -- nvim surround
   {
     "kylechui/nvim-surround",
+    enabled = true,
     version = "*", -- use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
     config = function()
@@ -189,11 +203,13 @@ return {
   -- plenery
   {
     "nvim-lua/plenary.nvim",
+    enabled = true,
   },
 
   -- remote nvim
   {
     "amitds1997/remote-nvim.nvim",
+    enabled = true,
     event = "VeryLazy",
     version = "*", -- Pin to GitHub releases
     dependencies = {
@@ -207,6 +223,7 @@ return {
   -- remote ssh
   {
     "nosduco/remote-sshfs.nvim",
+    enabled = true,
     event = "VeryLazy",
     dependencies = { "nvim-telescope/telescope.nvim" },
     opts = {
@@ -218,6 +235,7 @@ return {
   -- TODO comments
   {
     "folke/todo-comments.nvim",
+    enabled = true,
     event = "VeryLazy",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = require "configs.todo-comments",
@@ -225,4 +243,6 @@ return {
 
   -- undo tree
   { "mbbill/undotree", event = "VeryLazy" },
+    enabled = true,
+    enabled = true,
 }
