@@ -58,7 +58,7 @@ return {
     event = "VeryLazy",
     dependencies = { "MunifTanjim/nui.nvim" },
     config = function()
-      require "configs.finecmdline"
+      require "configs.fine-cmdline"
     end,
   },
 
@@ -188,10 +188,10 @@ return {
   {
     "amitds1997/remote-nvim.nvim",
     event = "VeryLazy",
-    version = "*", -- Pin to GitHub releases
+    version = "*",                     -- Pin to GitHub releases
     dependencies = {
-      "nvim-lua/plenary.nvim", -- For standard functions
-      "MunifTanjim/nui.nvim", -- To build the plugin UI
+      "nvim-lua/plenary.nvim",         -- For standard functions
+      "MunifTanjim/nui.nvim",          -- To build the plugin UI
       "nvim-telescope/telescope.nvim", -- For picking b/w different remote methods
     },
     config = true,
