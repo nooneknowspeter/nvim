@@ -43,7 +43,15 @@ return {
     opts = {},
   },
 
+  -- csv view
+  {
+    "hat0uma/csvview.nvim",
     enabled = true,
+    config = function()
+      require("csvview").setup()
+    end,
+  },
+
   -- dadbod; database tools
   {
     "kristijanhusak/vim-dadbod-ui",
