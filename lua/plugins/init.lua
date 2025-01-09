@@ -215,7 +215,7 @@ return {
       "williamboman/mason.nvim",
       "mfussenegger/nvim-dap",
       "theHamsta/nvim-dap-virtual-text",
-      "jay-babu/mason-nvim-dap.nvim",
+      { "nooneknowspeter/mason-nvim-dap.nvim", branch = "fix/js-dap-types" },
       "nvim-neotest/nvim-nio",
     },
     config = function()
