@@ -125,6 +125,8 @@ git config --global core.editor "nvim"
 - [neovim](https://github.com/neovim/neovim)
 - [neovim colorizer](https://github.com/NvChad/nvim-colorizer.lua)
 - [neovim lsp](https://github.com/neovim/nvim-lspconfig)
+- [noice](https://github.com/folke/noice.vim)
+- [notify](https://github.com/rcarriga/nvim-notify)
 - [none / null ls](https://github.com/nvimtools/none-ls.nvim)
 - [nvchad](https://github.com/NvChad/NvChad)
 - [nvim autopairs](https://github.com/windwp/nvim-autopairs)
