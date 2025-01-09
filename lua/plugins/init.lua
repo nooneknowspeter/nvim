@@ -116,7 +116,16 @@ return {
     ft = { "markdown" },
   },
 
+  -- messages
+  {
+    "AckslD/messages.nvim",
     enabled = true,
+    event = "VeryLazy",
+    config = function()
+      require "configs.messages"
+    end,
+  },
+
   -- multicursors
   {
     "smoka7/multicursors.nvim",
