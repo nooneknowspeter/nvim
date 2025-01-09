@@ -201,6 +201,17 @@ return {
     config = true,
   },
 
+  -- remote ssh
+  {
+    "nosduco/remote-sshfs.nvim",
+    event = "VeryLazy",
+    dependencies = { "nvim-telescope/telescope.nvim" },
+    opts = {
+      -- refer to the configuration section below
+      -- or leave empty for defaults
+    },
+  },
+
   -- undo tree
   { "mbbill/undotree", event = "VeryLazy" },
 }
