@@ -133,7 +133,7 @@ return {
     "rcarriga/nvim-notify",
     event = "VeryLazy",
     opts = {
-      background_colour = "#000000",
+      background_colour = "#FFFFFF",
     },
   },
   -- formatting and linting; null ls
