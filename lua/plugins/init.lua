@@ -58,7 +58,7 @@ return {
     event = "VeryLazy",
     dependencies = { "MunifTanjim/nui.nvim" },
     config = function()
-      require "lua.configs.finecmdline"
+      require "configs.finecmdline"
     end,
   },
 
