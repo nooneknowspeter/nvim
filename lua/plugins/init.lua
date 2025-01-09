@@ -215,9 +215,10 @@ return {
     },
   },
 
-  -- todo comments
+  -- TODO comments
   {
     "folke/todo-comments.nvim",
+    event = "VeryLazy",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = require "configs.todo-comments",
   },
