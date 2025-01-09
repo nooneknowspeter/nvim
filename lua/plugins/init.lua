@@ -91,7 +91,29 @@ return {
       require "configs.lspconfig"
     end,
   },
+  -- noice
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {},
+    dependencies = {
+      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+      "MunifTanjim/nui.nvim",
+      -- OPTIONAL:
+      --   `nvim-notify` is only needed, if you want to use the notification view.
+      --   If not available, we use `mini` as the fallback
+      "rcarriga/nvim-notify",
+    },
+  },
 
+  -- notify
+  {
+    "rcarriga/nvim-notify",
+    event = "VeryLazy",
+    opts = {
+      background_colour = "#000000",
+    },
+  },
   -- formatting and linting; null ls
   {
     "nvimtools/none-ls.nvim",
@@ -148,10 +170,10 @@ return {
   {
     "amitds1997/remote-nvim.nvim",
     event = "VeryLazy",
-    version = "*",                     -- Pin to GitHub releases
+    version = "*", -- Pin to GitHub releases
     dependencies = {
-      "nvim-lua/plenary.nvim",         -- For standard functions
-      "MunifTanjim/nui.nvim",          -- To build the plugin UI
+      "nvim-lua/plenary.nvim", -- For standard functions
+      "MunifTanjim/nui.nvim", -- To build the plugin UI
       "nvim-telescope/telescope.nvim", -- For picking b/w different remote methods
     },
     config = true,
