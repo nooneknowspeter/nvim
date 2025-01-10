@@ -21,7 +21,7 @@
   "markdown-preview.nvim": { "branch": "master", "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "97d9f1d3ad205dece6bcafd1d71cf1507608f3c7" },
   "mason-null-ls.nvim": { "branch": "main", "commit": "de19726de7260c68d94691afb057fa73d3cc53e7" },
-  "mason-nvim-dap.nvim": { "branch": "feat/js-dap-types", "commit": "2053f1a646a9f2d26cb6c054c8a7a6534a0a3c26" },
+  "mason-nvim-dap.nvim": { "branch": "fix/js-dap-types", "commit": "7815a09ea77ef7768f50e27034cc3c0863619f81" },
   "mason.nvim": { "branch": "main", "commit": "e2f7f9044ec30067bc11800a9e266664b88cda22" },
   "menu": { "branch": "main", "commit": "bea08e6f8772cb4d362795b0c7ae6343d0b229df" },
   "messages.nvim": { "branch": "main", "commit": "24dbb56829d1ed2d8d878e9f5547478441838567" },
