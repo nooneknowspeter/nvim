@@ -7,6 +7,7 @@ local mason_registry = require "mason-registry"
 
 mason.setup()
 
+-- mason nvim dap
 mason_dap.setup {
   automatic_installation = true,
   handlers = {
@@ -17,10 +18,11 @@ mason_dap.setup {
   },
 }
 
+-- vscode js dap
 vscode_js_dap.setup {
-  -- node_path = "node", -- Path of node executable. Defaults to $NODE_PATH, and then "node"
-  debugger_path = "./daps/vscode-js-debug", -- Path to vscode-js-debug installation.
-  -- debugger_cmd = { "js-debug-adapter" }, -- Command to use to launch the debug server. Takes precedence over `node_path` and `debugger_path`.
+  node_path = "/home/nooneknows/.nvm/versions/node/v23.6.0/bin/node",                          -- Path of node executable. Defaults to $NODE_PATH, and then "node"
+  debugger_path = "/home/nooneknows/.config/nvim/daps/vscode-js-debug",                        -- Path to vscode-js-debug installation.
+  debugger_cmd = { "js-debug-adapter" },                                                       -- Command to use to launch the debug server. Takes precedence over `node_path` and `debugger_path`.
   adapters = { "pwa-node", "pwa-chrome", "pwa-msedge", "node-terminal", "pwa-extensionHost" }, -- which adapters to register in nvim-dap
   -- log_file_path = "(stdpath cache)/dap_vscode_js.log" -- Path for file logging
   -- log_file_level = false -- Logging level for output to file. Set to false to disable file logging.
@@ -74,6 +76,39 @@ for _, language in ipairs { "typescript", "javascript" } do
     },
   }
 end
+
+-- one small step for manking
+dap.adapters.nlua = function(callback, conf)
+  local adapter = {
+    type = "server",
+    host = conf.host or "127.0.0.1",
+    port = conf.port or 8086,
+  }
+  if conf.start_neovim then
+    local dap_run = dap.run
+    dap.run = function(c)
+      adapter.port = c.port
+      adapter.host = c.host
+    end
+    require("osv").run_this()
+    dap.run = dap_run
+  end
+  callback(adapter)
+end
+dap.configurations.lua = {
+  {
+    type = "nlua",
+    request = "attach",
+    name = "Run this file",
+    start_neovim = {},
+  },
+  {
+    type = "nlua",
+    request = "attach",
+    name = "Attach to running Neovim instance (port = 8086)",
+    port = 8086,
+  },
+}
 
 -- dap ui setup
 dapui.setup()
