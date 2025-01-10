@@ -19,6 +19,7 @@ M.nvdash = {
   load_on_startup = true,
   header = {
 
+    "                                              ",
     " ▄▀▀▄ ▀▄  ▄▀▀▀▀▄   ▄▀▀▀▀▄   ▄▀▀▄ ▀▄  ▄▀▀█▄▄▄▄ ",
     "█  █ █ █ █      █ █      █ █  █ █ █ ▐  ▄▀   ▐ ",
     "▐  █  ▀█ █      █ █      █ ▐  █  ▀█   █▄▄▄▄▄  ",
@@ -29,6 +30,8 @@ M.nvdash = {
     "                                              ",
     "                                              ",
     "    people fear what they don't understand    ",
+    "                                              "
+
   },
 }
 
