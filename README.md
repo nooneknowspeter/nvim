@@ -115,6 +115,7 @@ git config --global core.editor "nvim"
 - [csv view](https://github.com/hat0uma/csvview.nvim)
 - [dadbod](https://github.com/tpop/vim-dadbod)
 - [dadbod ui](https://github.com/hristijanhusak/vim-dadbod-ui)
+- [distant](https://github.com/chipsenkbeil/distant.nvim)
 - [fine cmdline](https://github.com/vonheikemen/fine-cmdline.nvim)
 - [git signs](https://github.com/lewis6991/gitsigns.nvim)
 - [hydra](https://github.com/anuvyklack/hydra.nvim)
