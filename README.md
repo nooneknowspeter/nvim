@@ -1,8 +1,8 @@
 # nooneknows neovim configuration / setup
 
-![](https://i.imghippo.com/files/jyb9700hbg.gif)
+![render gif](https://i.imghippo.com/files/jyb9700hbg.gif)
 
-![](<https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(1).png>)
+![](<https://github.com/nooneknowspeter/nvim/blob/main/public/screenshot%20(3).png>)
 
 ![](<https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(1).png>)
 
