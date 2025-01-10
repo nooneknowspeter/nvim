@@ -20,7 +20,7 @@
   "markdown-preview.nvim": { "branch": "master", "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "97d9f1d3ad205dece6bcafd1d71cf1507608f3c7" },
   "mason-null-ls.nvim": { "branch": "main", "commit": "de19726de7260c68d94691afb057fa73d3cc53e7" },
-  "mason-nvim-dap.nvim": { "branch": "fix/js-dap-types", "commit": "405387b6f15c78d79de038eea7920443b1de761d" },
+  "mason-nvim-dap.nvim": { "branch": "fix/js-dap-types", "commit": "0a19df25e90fd58c530436b9a491bd101bd02329" },
   "mason.nvim": { "branch": "main", "commit": "e2f7f9044ec30067bc11800a9e266664b88cda22" },
   "menu": { "branch": "main", "commit": "bea08e6f8772cb4d362795b0c7ae6343d0b229df" },
   "messages.nvim": { "branch": "main", "commit": "24dbb56829d1ed2d8d878e9f5547478441838567" },
@@ -53,6 +53,5 @@
   "vim-dadbod-ui": { "branch": "master", "commit": "65454e2011c029922c2c972d63f8bf04282de033" },
   "vim-tmux-navigator": { "branch": "master", "commit": "d847ea942a5bb4d4fab6efebc9f30d787fd96e65" },
   "volt": { "branch": "main", "commit": "b7582c8e2ab3a411a72ab058251ba22d24e70f4a" },
-  "vscode-js-debug": { "branch": "main", "commit": "299d29f2a7b535115305068dfb531a7f37a05e44" },
   "which-key.nvim": { "branch": "main", "commit": "1f8d414f61e0b05958c342df9b6a4c89ce268766" }
 }
