@@ -10,7 +10,7 @@
 
 ## language support (dap, formatters, linters)
 
-supports multiple langauges including:
+supports multiple languages including:
 
 - C#
 - C++
@@ -37,6 +37,7 @@ supports multiple langauges including:
 - [ohmypsh](https://github.com/jandedobbeleer/oh-my-posh)
 - [python >= 3.8 <= 3.12](https://www.python.org/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [texlive (for latex)](https://www.tug.org/texlive/)
 - [yarn](https://www.npmjs.com/package/yarn)
 
 ### debian / ubuntu
@@ -127,7 +128,7 @@ git config --global core.editor "nvim"
 - [mason](https://github.com/williamboman/mason.nvim)
 - [mason dap adapter](https://github.com/jay-babu/mason-nvim-dap.nvim)
 - [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim)
-- [mason null ls ](https://github.com/jay-babu/mason-null-ls.nvim)
+- [mason null ls](https://github.com/jay-babu/mason-null-ls.nvim)
 - [messages](https://github.com/AckslD/messages.nvim)
 - [multicursors](https://github.com/smoka7/multicursors.nvim)
 - [neovim](https://github.com/neovim/neovim)
@@ -148,5 +149,6 @@ git config --global core.editor "nvim"
 - [remote sshfs](https://github.com/nosduco/remote-sshfs.nvim)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [undotree](https://github.com/mbbill/undotree)
+- [vim tex](https://github.com/lervag/vimtex)
 - [vim tmux navigator](https://github.com/christoomey/vim-tmux-navigator)
 - [whichkey](https://github.com/folke/which-key.nvim)
