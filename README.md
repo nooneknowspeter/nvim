@@ -63,7 +63,7 @@ sudo pacman -S base-devel
 rm -rf ~/.config/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.local/share/nvim
-git clone https://github.com/nooneknowspeter/nvim-setup.git ~/.config/nvim && nvim
+git clone https://github.com/nooneknowspeter/nvim.git ~/.config/nvim && nvim
 ```
 
 ### windows
@@ -71,7 +71,7 @@ git clone https://github.com/nooneknowspeter/nvim-setup.git ~/.config/nvim && nv
 ```
 rm -Force ~\AppData\Local\nvim
 rm -Force ~\AppData\Local\nvim-data
-git clone https://github.com/nooneknowspeter/nvim-setup.git C:\Users\$ENV:USERNAME\AppData\Local\nvim && nvim
+git clone https://github.com/nooneknowspeter/nvim.git C:\Users\$ENV:USERNAME\AppData\Local\nvim && nvim
 
 ```
 
@@ -80,7 +80,7 @@ git clone https://github.com/nooneknowspeter/nvim-setup.git C:\Users\$ENV:USERNA
 ```
 docker run -w /root -it --rm alpine:latest sh -uelic '
   apk add git nodejs neovim ripgrep build-base wget --update
-  git clone https://github.com/nooneknowspeter/nvim-setup.git ~/.config/nvim
+  git clone https://github.com/nooneknowspeter/nvim.git ~/.config/nvim
   nvim
   '
 ```
