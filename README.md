@@ -1,7 +1,5 @@
 # nooneknows neovim configuration / setup
 
-![render gif](https://github.com/nooneknowspeter/nvim/blob/main/public/preview.mp4)
-
 ![](<https://github.com/nooneknowspeter/nvim/blob/main/public/screenshot%20(3).png>)
 
 ![](<https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(1).png>)
