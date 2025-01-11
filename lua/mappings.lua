@@ -8,4 +8,4 @@ map("i", "jk", "<ESC>")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
-vim.keymap.set("n", "gd", vim.lsp.buf.definition, { noremap = true, silent = true })
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = " Go To Definition", noremap = true, silent = true })
