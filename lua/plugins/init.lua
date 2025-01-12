@@ -160,7 +160,11 @@ return {
   -- noice
   {
     "folke/noice.nvim",
+    enabled = true,
     event = "VeryLazy",
+    config = function()
+      require "configs.noice"
+    end,
     opts = {
       -- add any options here
     },
