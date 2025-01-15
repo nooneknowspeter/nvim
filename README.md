@@ -148,5 +148,6 @@ git config --global core.editor "nvim"
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [undotree](https://github.com/mbbill/undotree)
 - [vim tex](https://github.com/lervag/vimtex)
+- [vim tex previewer](https://github.com/xuhdev/vim-latex-live-preview)
 - [vim tmux navigator](https://github.com/christoomey/vim-tmux-navigator)
 - [whichkey](https://github.com/folke/which-key.nvim)
