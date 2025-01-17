@@ -68,9 +68,9 @@ git clone https://github.com/nooneknowspeter/nvim.git ~/.config/nvim && nvim
 ### windows
 
 ```
-rm -Force ~\AppData\Local\nvim
-rm -Force ~\AppData\Local\nvim-data
-git clone https://github.com/nooneknowspeter/nvim.git C:\Users\$ENV:USERNAME\AppData\Local\nvim && nvim
+rm -Force $env:LOCALAPPDATA\nvim
+rm -Force $env:LOCALAPPDATA\nvim-data
+git clone https://github.com/nooneknowspeter/nvim.git $env:LOCALAPPDATA\nvim && nvim
 
 ```
 
