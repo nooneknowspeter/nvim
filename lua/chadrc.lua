@@ -30,8 +30,7 @@ M.nvdash = {
     "                                              ",
     "                                              ",
     "    people fear what they don't understand    ",
-    "                                              "
-
+    "                                              ",
   },
 }
 
@@ -45,7 +44,7 @@ M.ui = {
   },
 }
 
-M.cheetsheet = {
+M.cheatsheet = {
   theme = "simple", -- simple/grid
 }
 
