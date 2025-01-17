@@ -14,6 +14,7 @@ supports multiple languages including:
 - C++
 - CSS
 - GLSL
+- Go
 - HTML
 - JavaScript
 - Lua
@@ -108,6 +109,7 @@ git config --global core.editor "nvim"
 
 ## neovim plugins
 
+- [autopairing](https://github.com/windwp/nvim-autopairs)
 - [better escape](https://github.com/max397574/better-escape.nvim)
 - [cmake tools](https://github.com/Civitasv/cmake-tools.nvim)
 - [cmp nvim lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
@@ -115,13 +117,13 @@ git config --global core.editor "nvim"
 - [dadbod](https://github.com/tpop/vim-dadbod)
 - [dadbod ui](https://github.com/hristijanhusak/vim-dadbod-ui)
 - [distant](https://github.com/chipsenkbeil/distant.nvim)
-- [fine cmdline](https://github.com/vonheikemen/fine-cmdline.nvim)
 - [git signs](https://github.com/lewis6991/gitsigns.nvim)
 - [hydra](https://github.com/anuvyklack/hydra.nvim)
 - [indent blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [lua json](https://github.com/Joakker/lua-json5)
 - [lazygit vim](https://github.com/kdheepak/lazygit.nvim)
 - [lazyvim](https://github.com/LazyVim/LazyVim)
+- [luasnip](https://github.com/L3MON4D3/LuaSnip)
 - [markdown previewer](https://github.com/iamcco/markdown-preview.nvim)
 - [mason](https://github.com/williamboman/mason.nvim)
 - [mason dap adapter](https://github.com/jay-babu/mason-nvim-dap.nvim)
@@ -137,12 +139,14 @@ git config --global core.editor "nvim"
 - [none / null ls](https://github.com/nvimtools/none-ls.nvim)
 - [nvchad](https://github.com/NvChad/NvChad)
 - [nvim autopairs](https://github.com/windwp/nvim-autopairs)
+- [nvim cmp](https://github.com/hrsh7th/nvim-cmp)
 - [nvim dap](https://github.com/mfussenegger/nvim-dap)
 - [nvim dap ui](https://github.com/rcarriga/nvim-dap-ui)
 - [nvim-lint](https://github.com/mfussenegger/nvim-lint)
 - [nvim surround](https://github.com/kylechui/nvim-surround)
 - [nvim treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [nvim plenery](https://github.com/nvim-lua/plenary.nvim)
+- [nvzone](https://github.com/nvzone)
 - [remote nvim](https://github.com/amitds1997/remote-nvim.nvim)
 - [remote sshfs](https://github.com/nosduco/remote-sshfs.nvim)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
