@@ -127,6 +127,7 @@ export EDITOR=nvim
 - [distant](https://github.com/chipsenkbeil/distant.nvim)
 - [git signs](https://github.com/lewis6991/gitsigns.nvim)
 - [hydra](https://github.com/anuvyklack/hydra.nvim)
+- [images.nvim](https://github.com/3rd/image.nvim)
 - [indent blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [lua json](https://github.com/Joakker/lua-json5)
 - [lazygit vim](https://github.com/kdheepak/lazygit.nvim)
