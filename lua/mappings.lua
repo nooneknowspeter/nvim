@@ -1,6 +1,6 @@
 local map = vim.keymap.set
 
--- map("n", "gd", vim.lsp.buf.definition, { desc = " Go To Definition", noremap = true, silent = true })
+map("n", "gd", vim.lsp.buf.definition, { desc = "Go To Definition", noremap = true, silent = true })
 
 map("i", "<C-b>", "<ESC>^i", { desc = "move beginning of line" })
 map("i", "<C-e>", "<End>", { desc = "move end of line" })
