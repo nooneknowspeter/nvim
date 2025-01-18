@@ -107,7 +107,15 @@ upgrade neovim
 git config --global core.editor "nvim"
 ```
 
+## nvim as global unix editor
+
+```
+export EDITOR=nvim
+```
+
 ## neovim plugins
+
+[hash map of configured plugins](https://github.com/nooneknowspeter/nvim/blob/main/lazy-lock.json)
 
 - [autopairing](https://github.com/windwp/nvim-autopairs)
 - [better escape](https://github.com/max397574/better-escape.nvim)
