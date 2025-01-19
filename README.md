@@ -1,10 +1,10 @@
 # nooneknows neovim configuration / setup
 
-![](<https://github.com/nooneknowspeter/nvim/blob/main/public/screenshot%20(3).png>)
+![screenshot](<https://github.com/nooneknowspeter/nvim/blob/main/public/screenshot%20(3).png>)
 
-![](<https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(1).png>)
+![screenshot](<https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(1).png>)
 
-![](<https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(2).png>)
+![screenshot](<https://github.com/nooneknowspeter/nvim-setup/blob/main/public/screenshot%20(2).png>)
 
 ## language support (dap, formatters, linters)
 
@@ -41,7 +41,7 @@ supports multiple languages including:
 
 ### debian / ubuntu
 
-```
+```sh
 sudo apt upgrade
 sudo apt update
 sudo apt install build-essential
@@ -49,7 +49,7 @@ sudo apt install build-essential
 
 ### arch
 
-```
+```sh
 sudo pacman -Syu
 sudo pacman -S base-devel
 ```
@@ -58,7 +58,7 @@ sudo pacman -S base-devel
 
 ### linux / macos
 
-```
+```sh
 rm -rf ~/.config/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.local/share/nvim
@@ -67,7 +67,7 @@ git clone https://github.com/nooneknowspeter/nvim.git ~/.config/nvim && nvim
 
 ### windows
 
-```
+```sh
 rm -Force $env:LOCALAPPDATA\nvim
 rm -Force $env:LOCALAPPDATA\nvim-data
 git clone https://github.com/nooneknowspeter/nvim.git $env:LOCALAPPDATA\nvim && nvim
@@ -76,7 +76,7 @@ git clone https://github.com/nooneknowspeter/nvim.git $env:LOCALAPPDATA\nvim && 
 
 ### docker
 
-```
+```sh
 docker run -w /root -it --rm alpine:latest sh -uelic '
   apk add git nodejs neovim ripgrep build-base wget --update
   git clone https://github.com/nooneknowspeter/nvim.git ~/.config/nvim
@@ -88,7 +88,7 @@ docker run -w /root -it --rm alpine:latest sh -uelic '
 
 ### updating nvim
 
-```
+```sh
 brew update
 upgrade neovim
 ```
@@ -103,13 +103,13 @@ upgrade neovim
 
 ## nvim as git editor
 
-```
+```sh
 git config --global core.editor "nvim"
 ```
 
 ## nvim as global unix editor
 
-```
+```sh
 export EDITOR=nvim
 ```
 

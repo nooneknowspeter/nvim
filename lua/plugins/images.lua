@@ -11,5 +11,8 @@ return {
     event = "VeryLazy",
     dependencies = { "luarocks.nvim" },
     opts = {},
+    config = function()
+      require "configs.images"
+    end,
   },
 }
