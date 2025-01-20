@@ -1,4 +1,14 @@
 return {
+  -- fidget
+  {
+    "j-hui/fidget.nvim",
+    enabled = true,
+    event = "VeryLazy",
+    opts = function()
+      require "configs.fidget"
+    end,
+  },
+
   {
     -- noice
     "folke/noice.nvim",
@@ -16,17 +26,24 @@ return {
       -- OPTIONAL:
       --   `nvim-notify` is only needed, if you want to use the notification view.
       --   If not available, we use `mini` as the fallback
-      "rcarriga/nvim-notify",
+      -- "rcarriga/nvim-notify",
     },
   },
 
   -- notify
   {
     "rcarriga/nvim-notify",
-    enabled = true,
+    enabled = false,
     config = function()
       require "configs.notify" -- load your notify configuration
     end,
+  },
+
+  -- nui.nvim
+  {
+    "MunifTanjim/nui.nvim",
+    enabled = true,
+    event = "VeryLazy",
   },
 
   -- nvchad base46
