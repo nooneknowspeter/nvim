@@ -2,7 +2,8 @@ return {
   -- vim tex
   {
     "lervag/vimtex",
-    lazy = false,                                         -- lazy-loading will disable inverse search
+    enable = true,
+    lazy = false, -- lazy-loading will disable inverse search
     config = function()
       vim.g.vimtex_mappings_disable = { ["n"] = { "K" } } -- disable `K` as it conflicts with LSP hover
     end,
@@ -14,6 +15,7 @@ return {
   -- vim tex previewer
   {
     "xuhdev/vim-latex-live-preview",
+    enable = false,
     event = "VeryLazy",
     config = function()
       require "configs.vim-text-previewer"
