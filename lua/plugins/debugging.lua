@@ -8,7 +8,7 @@ return {
       "williamboman/mason.nvim",
       "mfussenegger/nvim-dap",
       "theHamsta/nvim-dap-virtual-text",
-      { "nooneknowspeter/mason-nvim-dap.nvim", branch = "fix/js-dap-types" },
+      { "nooneknowspeter/mason-nvim-dap.nvim", branch = "feat/additional-js-dap-configs" },
       "nvim-neotest/nvim-nio",
       "mxsdev/nvim-dap-vscode-js",
       "jbyuki/one-small-step-for-vimkind",
