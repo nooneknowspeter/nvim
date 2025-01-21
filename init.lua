@@ -36,3 +36,6 @@ require "autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-- python
+-- vim.g.python3_host_prog = "/usr/sbin/python"
