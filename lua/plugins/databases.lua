@@ -5,6 +5,7 @@ return {
     enabled = true,
     dependencies = {
       { "tpope/vim-dadbod", lazy = true },
+      { "kristijanhusak/vim-dadbod-completion", lazy = true },
     },
     cmd = {
       "DBUI",
