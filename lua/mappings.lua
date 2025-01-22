@@ -1,4 +1,5 @@
 local map = vim.keymap.set
+local del = vim.keymap.del
 
 map("i", "<C-b>", "<ESC>^i", { desc = "move beginning of line" })
 map("i", "<C-e>", "<End>", { desc = "move end of line" })
@@ -24,6 +25,25 @@ map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "toggle nvcheatsheet" }
 -- global lsp mappings
 map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "LSP diagnostic loclist" })
 map("n", "gd", vim.lsp.buf.definition, { desc = "Go To Definition", noremap = true, silent = true })
+
+map("n", "gD", vim.lsp.buf.declaration, { desc = "LSP Declaration" })
+map("n", "gi", vim.lsp.buf.implementation, { desc = "Go to implementation" })
+map("n", "<leader>sh", vim.lsp.buf.signature_help, { desc = "Show signature help" })
+map("n", "<leader>wa", vim.lsp.buf.add_workspace_folder, { desc = "Add workspace folder" })
+map("n", "<leader>wr", vim.lsp.buf.remove_workspace_folder, { desc = "Remove workspace folder" })
+
+map("n", "<leader>wl", function()
+  print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+end, { desc = "List workspace folders" })
+
+map("n", "<leader>D", vim.lsp.buf.type_definition, { desc = "Go to type definition" })
+map("n", "<leader>ra", require "nvchad.lsp.renamer", { desc = "NvRenamer" })
+
+map({ "n", "v" }, "<C-ca>", function()
+  vim.lsp.buf.code_action()
+end, { desc = "Code action" })
+
+map("n", "gr", vim.lsp.buf.references, { desc = "Show references" })
 
 -- tabufline
 map("n", "<leader>b", "<cmd>new<CR>", { desc = "buffer new" })
