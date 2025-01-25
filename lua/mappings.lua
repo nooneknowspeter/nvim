@@ -39,7 +39,7 @@ end, { desc = "List workspace folders" })
 map("n", "<leader>D", vim.lsp.buf.type_definition, { desc = "Go to type definition" })
 map("n", "<leader>ra", require "nvchad.lsp.renamer", { desc = "NvRenamer" })
 
-map({ "n", "v" }, "<C-ca>", function()
+map({ "n", "v" }, "<leader>ca", function()
   vim.lsp.buf.code_action()
 end, { desc = "Code action" })
 
