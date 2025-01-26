@@ -1,5 +1,5 @@
 require("image").setup({
-  backend = "kitty",
+  backend = "ueberzug",
   processor = "magick_cli", -- or "magick_cli"
   integrations = {
     markdown = {
