@@ -76,7 +76,16 @@ return {
   },
 
   -- nvzone
-  "nvzone/volt",
-  "nvzone/menu",
+  {
+    "nvzone/volt",
+    enabled = true,
+    lazy = true,
+  },
+  {
+    "nvzone/menu",
+    enabled = true,
+    lazy = true,
+  },
+
   { "nvzone/minty", cmd = { "Huefy", "Shades" } },
 }
