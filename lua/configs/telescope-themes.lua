@@ -21,6 +21,8 @@ require("telescope").setup({
 			-- (boolean) -> enable/disable live preview
 			enable_live_preview = true,
 
+			ignore = {},
+
 			-- all builtin themes are ignored by default
 			-- (list) -> provide table of theme names to overwrite builtins list
 

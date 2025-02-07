@@ -1,13 +1,10 @@
 return {
 	{
 		"xiyaowong/transparent.nvim",
-		event = "VeryLazy",
+		lazy = false, --this was SUPER IMPORTANT
 		config = function()
-			-- Optional, you don't have to run setup.
-			require("transparent").setup({
-				auto = true,
-				-- table: default groups
-				groups = {
+			require("transparent").setup({ -- Optional, you don't have to run setup.
+				groups = { -- table: default groups
 					"Normal",
 					"NormalNC",
 					"Comment",
@@ -34,20 +31,14 @@ return {
 					"StatusLineNC",
 					"EndOfBuffer",
 				},
-				-- table: additional groups that should be cleared
 				extra_groups = {
-					"NormalFloat",
+					"NeoTreeNormal",
+					"NeoTreeNormalNC",
 					"BufferLine",
 					"lualine",
-				},
-				-- table: groups you don't want to clear
-				exclude_groups = {},
-				-- function: code to be executed after highlight groups are cleared
-				-- Also the user event "TransparentClear" will be triggered
-				on_clear = function() end,
+				}, -- and this was super important as well
+				exclude_groups = {}, -- table: groups you don't want to clear
 			})
-
-			vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, { "ExtraGroup" })
 		end,
 	},
 }
