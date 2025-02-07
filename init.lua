@@ -6,5 +6,8 @@ require("options")
 
 -- load mappings
 vim.schedule(function()
-  require("mappings")
+	require("mappings")
 end)
+
+-- colorscheme
+require("current-theme")
