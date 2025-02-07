@@ -27,12 +27,12 @@ supports multiple languages including:
 - [dotnet](https://dotnet.microsoft.com/en-us/)
 - [homebrew](https://brew.sh/)
 - [lazygit](https://github.com/jesseduffield/lazygit)
-- [lua <= v5.1.x](https://lua.org/)
+- [lua \<= v5.1.x](https://lua.org/)
 - [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-package/)
 - [nerdfonts](https://www.nerdfonts.com/)
 - [nodejs](https://nodejs.org/en/)
 - [ohmypsh](https://github.com/jandedobbeleer/oh-my-posh)
-- [python >= 3.8 <= 3.12](https://www.python.org/)
+- [python >= 3.8 \<= 3.12](https://www.python.org/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [texlive (for latex)](https://www.tug.org/texlive/)
 - [yarn](https://www.npmjs.com/package/yarn)
@@ -114,4 +114,3 @@ export EDITOR=nvim
 ## neovim plugins
 
 [hash map of configured plugins](https://github.com/nooneknowspeter/nvim/blob/main/lazy-lock.json)
-
