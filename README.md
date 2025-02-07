@@ -1,5 +1,9 @@
 # nooneknows neovim configuration / setup
 
+![](https://github.com/nooneknowspeter/nvim/blob/main/public/Screenshot%202025-02-07%20004857.png)
+![](https://github.com/nooneknowspeter/nvim/blob/main/public/Screenshot%202025-02-07%20005235.png)
+![](https://github.com/nooneknowspeter/nvim/blob/main/public/Screenshot%202025-02-07%20004937.png)
+
 ## language support (dap, formatters, linters)
 
 supports multiple languages including:
