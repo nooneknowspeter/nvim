@@ -5,6 +5,6 @@ return {
     enabled = true,
     event = "VeryLazy",
     dependencies = { "nvim-lua/plenary.nvim" },
-    opts = require "configs.todo-comments",
+    opts = require("configs.todo-comments"),
   },
 }

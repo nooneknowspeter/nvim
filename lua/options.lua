@@ -13,14 +13,17 @@ o.cursorline = true
 o.cursorlineopt = "number"
 
 -- indenting
+
 o.expandtab = true
 o.shiftwidth = 2
+
 o.smartindent = true
 o.tabstop = 2
 o.softtabstop = 2
 
 opt.fillchars = { eob = " " }
 o.ignorecase = true
+
 o.smartcase = true
 o.mouse = "a"
 
@@ -50,6 +53,7 @@ g.loaded_node_provider = 0
 g.loaded_python3_provider = 0
 g.loaded_perl_provider = 0
 g.loaded_ruby_provider = 0
+
 
 -- add binaries installed by mason.nvim to path
 local is_windows = vim.fn.has "win32" ~= 0

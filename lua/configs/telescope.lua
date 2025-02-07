@@ -1,5 +1,3 @@
-dofile(vim.g.base46_cache .. "telescope")
-
 return {
   defaults = {
     prompt_prefix = "   ",
@@ -17,6 +15,7 @@ return {
     mappings = {
       n = { ["q"] = require("telescope.actions").close },
     },
+
   },
 
   extensions_list = { "themes", "terms" },

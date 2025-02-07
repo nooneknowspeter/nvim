@@ -14,6 +14,7 @@ return {
     "nvim-telescope/telescope-ui-select.nvim",
     enabled = true,
     event = "VeryLazy",
+
     config = function()
       require "configs.telescope-ui-select"
     end,
