@@ -5,7 +5,7 @@ return {
     dependencies = { "nvim-treesitter/nvim-treesitter" },
     cmd = "Telescope",
     opts = function()
-      return require "configs.telescope"
+      return require("configs.telescope")
     end,
   },
 
@@ -16,7 +16,16 @@ return {
     event = "VeryLazy",
 
     config = function()
-      require "configs.telescope-ui-select"
+      require("configs.telescope-ui-select")
+    end,
+  },
+
+  -- telescope themes
+  {
+    "andrew-george/telescope-themes",
+    enabled = true,
+    config = function()
+      require("configs.telescope-themes")
     end,
   },
 }
