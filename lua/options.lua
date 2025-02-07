@@ -5,7 +5,7 @@ local g = vim.g
 o.cursorlineopt = 'both' -- to enable cursorline!
 vim.opt.relativenumber = true
 
-o.laststatus = 3
+o.laststatus = 0
 o.showmode = false
 
 o.clipboard = "unnamedplus"
