@@ -8,6 +8,8 @@ require("mappings.neo-tree")
 
 require("mappings.none-ls")
 
+require("mappings.transparent")
+
 require("mappings.telescope")
 
 require("mappings.vim-test")
