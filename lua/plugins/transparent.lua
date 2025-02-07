@@ -38,7 +38,7 @@ return {
 				extra_groups = {
 					"NormalFloat",
 					"BufferLine",
-					"Lualine",
+					"lualine",
 				},
 				-- table: groups you don't want to clear
 				exclude_groups = {},
