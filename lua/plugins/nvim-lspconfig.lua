@@ -7,6 +7,7 @@ return {
       return require "configs.mason"
     end,
   },
+
   {
     "williamboman/mason-lspconfig.nvim",
     enabled = true,
@@ -18,6 +19,7 @@ return {
       require("configs.mason-lspconfig")
     end
   },
+
   {
     "neovim/nvim-lspconfig",
     dependencies = { 'saghen/blink.cmp' },
