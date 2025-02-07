@@ -2,7 +2,16 @@ return {
 	{
 		"saghen/blink.cmp",
 		-- optional: provides snippets for the snippet source
-		dependencies = { "L3MON4D3/LuaSnip", version = "v2.*" },
+		dependencies = {
+			"rafamadriz/friendly-snippets",
+			"niuiic/blink-cmp-rg.nvim",
+			-- add blink.compat to dependencies
+			{
+				"saghen/blink.compat",
+				optional = true, -- make optional so it's only enabled if any extras need it
+				opts = {},
+			},
+		},
 
 		-- use a release tag to download pre-built binaries
 		version = "*",
@@ -14,6 +23,8 @@ return {
 		---@module 'blink.cmp'
 		---@type blink.cmp.Config
 		opts = require("configs.blink"),
-		opts_extend = { "sources.default" },
+		opts_extend = {
+			"sources.default",
+		},
 	},
 }
