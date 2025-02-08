@@ -28,3 +28,7 @@ map({ "n", "v" }, "<leader>ca", function()
 end, { desc = "Code action" })
 
 map("n", "gr", vim.lsp.buf.references, { desc = "Show references" })
+
+map("n", "<leader>dd", function()
+  vim.diagnostic.open_float()
+end, { desc = "Show diagnostics Under Cursor" })
