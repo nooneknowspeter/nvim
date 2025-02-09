@@ -1,5 +1,7 @@
 require("mappings.bufferline")
 
+require("mappings.debugging")
+
 require("mappings.general")
 
 require("mappings.lsp")
