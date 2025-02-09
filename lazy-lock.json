@@ -9,7 +9,7 @@
   "bufdelete.nvim": { "branch": "master", "commit": "f6bcea78afb3060b198125256f897040538bcb81" },
   "bufferline.nvim": { "branch": "main", "commit": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3" },
   "cmake-tools.nvim": { "branch": "master", "commit": "83268ea6f969f1e6eaa85f72118a11acb6198bf0" },
-  "colorful-menu.nvim": { "branch": "master", "commit": "d996579b0b69f909e36070ff98d014ce8d01fa93" },
+  "colorful-menu.nvim": { "branch": "master", "commit": "22df7b70c821772fa44cb696f577cb1e489f3aed" },
   "csvview.nvim": { "branch": "main", "commit": "22eb36a8d17b15bdb0d934381198089bad1e4b7d" },
   "fidget.nvim": { "branch": "main", "commit": "d9ba6b7bfe29b3119a610892af67602641da778e" },
   "friendly-snippets": { "branch": "main", "commit": "efff286dd74c22f731cdec26a70b46e5b203c619" },
