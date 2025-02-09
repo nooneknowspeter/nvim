@@ -67,5 +67,6 @@
   "vimtex": { "branch": "master", "commit": "dfaf26c2cafddf61963ebeff28437352002691ac" },
   "vimux": { "branch": "master", "commit": "7db6b2f79d432ee3820668b1d4625311dbe1d0ad" },
   "volt": { "branch": "main", "commit": "3bedb1576db574af160643eea7df3b09dbe5ee9c" },
-  "which-key.nvim": { "branch": "main", "commit": "0e76a87ac51772569aec678dc74baa8e2a86100c" }
+  "which-key.nvim": { "branch": "main", "commit": "0e76a87ac51772569aec678dc74baa8e2a86100c" },
+  "window-picker": { "branch": "main", "commit": "0dfef64eaf063e1cd27983ab11a30e7bc5b74fac" }
 }
