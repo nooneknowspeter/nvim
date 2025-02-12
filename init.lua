@@ -1,3 +1,5 @@
+vim.o.termguicolors = true
+
 -- lazyvim package manager
 require("configs.lazy")
 
