@@ -15,3 +15,5 @@ require("mappings.transparent")
 require("mappings.telescope")
 
 require("mappings.vim-test")
+
+require("mappings.zen-mode")
