@@ -28,4 +28,13 @@ return {
       require("configs.telescope-themes")
     end,
   },
+
+  -- telescope media files
+  {
+    "nvim-telescope/telescope-media-files.nvim",
+    enabled = true,
+    config = function()
+      require("configs.telescope-media-files")
+    end
+  },
 }
