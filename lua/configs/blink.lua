@@ -28,7 +28,7 @@ return {
 		},
 		menu = {
 			border = "rounded",
-			winblend = 0,
+			winblend = 5,
 			scrollbar = true,
 			draw = {
 				-- We don't need label_description now because label and label_description are already
@@ -51,7 +51,7 @@ return {
 			auto_show_delay_ms = 200,
 			window = {
 				border = "rounded",
-				winblend = 0,
+				winblend = 5,
 				scrollbar = true,
 			},
 		},
@@ -64,7 +64,7 @@ return {
 		enabled = true,
 		window = {
 			border = "rounded",
-			winblend = 0,
+			winblend = 5,
 			scrollbar = false, -- Note that the gutter will be disabled when border ~= 'none'
 		},
 	},
