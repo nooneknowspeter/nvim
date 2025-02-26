@@ -14,7 +14,6 @@ return {
 			selection = {
 				-- When `true`, will automatically select the first item in the completion list
 				preselect = true,
-
 				-- When `true`, inserts the completion item automatically when selecting it
 				-- You may want to bind a key to the `cancel` command (default <C-e>) when using this option,
 				-- which will both undo the selection and hide the completion menu
