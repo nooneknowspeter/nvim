@@ -9,6 +9,8 @@ return {
 		["<S-j>"] = { "scroll_documentation_down", "fallback" },
 	},
 
+	fuzzy = { implementation = "prefer_rust" },
+
 	completion = {
 		list = {
 			selection = {
@@ -66,6 +68,9 @@ return {
 			winblend = 5,
 			scrollbar = false, -- Note that the gutter will be disabled when border ~= 'none'
 		},
+	},
+	snippets = {
+		preset = "luasnip",
 	},
 	sources = {
 		-- adding any nvim-cmp sources here will enable them
