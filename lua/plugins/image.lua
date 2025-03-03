@@ -12,7 +12,7 @@ return {
 						filetypes = { "markdown", "vimwiki", "quarto" },
 					},
 					html = {
-						enabled = true,
+						enabled = false,
 					},
 				},
 				max_width_window_percentage = nil,
