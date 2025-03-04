@@ -12,26 +12,29 @@ return {
 					i = {
 						j = {
 							-- These can all also be functions
+							k = "<Esc>",
 							j = "<Esc>",
 						},
 					},
 					c = {
 						j = {
+							k = "<Esc>",
 							j = "<Esc>",
-						},
-					},
-					t = {
-						j = {
-							j = "<C-\\><C-n>",
 						},
 					},
 					v = {
 						j = {
-							j = "<Esc>",
+							k = "<Esc>",
+						},
+					},
+					t = {
+						j = {
+							k = "<C-\\><C-n>",
 						},
 					},
 					s = {
 						j = {
+							k = "<Esc>",
 							j = "<Esc>",
 						},
 					},
