@@ -11,10 +11,8 @@ return {
 	{
 		"williamboman/mason-lspconfig.nvim",
 		enabled = true,
-		lazy = false,
-		opts = {
-			auto_install = true,
-		},
+		dependencies = { "williamboman/mason.nvim" },
+		event = { "BufReadPre", "BufNewFile" },
 		config = function()
 			require("configs.mason-lspconfig")
 		end,
