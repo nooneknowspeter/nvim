@@ -1,9 +1,9 @@
 return {
-  {
-    "lewis6991/gitsigns.nvim",
-    event = "User FilePost",
-    opts = function()
-      return require "configs.gitsigns"
-    end,
-  },
+	{
+		"lewis6991/gitsigns.nvim",
+		enabled = true,
+		opts = function()
+			return require("configs.gitsigns")
+		end,
+	},
 }
