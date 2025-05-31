@@ -12,6 +12,7 @@ return {
 		opts = {
 			preset = "obsidian",
 			code = {
+				render_modes = true,
 				disable_background = true,
 				border = "thin",
 			},
