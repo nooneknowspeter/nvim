@@ -13,6 +13,7 @@ return {
 			preset = "obsidian",
 			code = {
 				disable_background = true,
+				border = "thin",
 			},
 			html = {
 				comment = {
