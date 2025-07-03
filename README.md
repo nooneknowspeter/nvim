@@ -1,8 +1,7 @@
 # nooneknows neovim configuration / setup
 
-![](https://github.com/nooneknowspeter/nvim/blob/main/public/Screenshot%202025-02-07%20004857.png)
-![](https://github.com/nooneknowspeter/nvim/blob/main/public/Screenshot%202025-02-07%20005235.png)
-![](https://github.com/nooneknowspeter/nvim/blob/main/public/Screenshot%202025-02-07%20004937.png)
+![wezterm, tmux, nvim w/ default colorscheme](https://i.imgur.com/lLk1Tws.png)
+![ghostty, tmux, nvim w/ black metal dark funeral colorscheme](https://i.imgur.com/eLZ4lC3.png)
 
 ## language support (dap, formatters, linters)
 
