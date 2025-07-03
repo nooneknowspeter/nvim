@@ -1,0 +1,3 @@
+[submodule "daps/vscode-js-debug"]
+	path = daps/vscode-js-debug
+	url = https://github.com/microsoft/vscode-js-debug

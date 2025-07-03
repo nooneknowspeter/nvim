@@ -1,5 +1,5 @@
 return {
-  -- undotree
+  -- undo tree
   {
     "mbbill/undotree",
     enabled = true,

@@ -1,3 +1,5 @@
+dofile(vim.g.base46_cache .. "mason")
+
 return {
   PATH = "skip",
 
@@ -10,9 +12,4 @@ return {
   },
 
   max_concurrent_installers = 10,
-
-  -- local repo for development
-  -- registries = {
-  --   "file:~/projects/neovim/mason-registry/",
-  -- },
 }

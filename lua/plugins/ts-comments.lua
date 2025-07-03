@@ -1,5 +1,4 @@
 return {
-  -- fixes jsx and tsx commenting
   {
     "folke/ts-comments.nvim",
     opts = {},

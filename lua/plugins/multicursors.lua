@@ -2,7 +2,7 @@ return {
   -- multicursors
   {
     "smoka7/multicursors.nvim",
-    enabled = false,
+    enabled = true,
     event = "VeryLazy",
     dependencies = {
       "nvimtools/hydra.nvim",
