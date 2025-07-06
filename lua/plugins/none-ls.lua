@@ -1,8 +1,9 @@
 return {
-  {
-    "nvimtools/none-ls.nvim",
-    config = function()
-      require("configs.none-ls")
-    end,
-  }
+	{
+		"nvimtools/none-ls.nvim",
+		enabled = true,
+		config = function()
+			require("configs.none-ls")
+		end,
+	},
 }
