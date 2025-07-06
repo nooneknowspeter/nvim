@@ -2,6 +2,9 @@ local opt = vim.opt
 local o = vim.o
 local g = vim.g
 
+g.mapleader = " "
+g.maplocalleader = "\\"
+
 o.cursorlineopt = "both" -- to enable cursorline!
 vim.opt.relativenumber = true
 
