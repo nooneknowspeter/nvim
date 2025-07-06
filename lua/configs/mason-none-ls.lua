@@ -1,9 +1,9 @@
+require("null-ls").setup()
+
 require("mason").setup()
 require("mason-null-ls").setup({
-	ensure_installed = {
-		"stylua",
-	},
-	automatic_installation = false,
+	ensure_installed = {},
+	automatic_installation = true,
 	methods = {
 		diagnostics = true,
 		formatting = true,
