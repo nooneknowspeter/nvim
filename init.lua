@@ -1,8 +1,11 @@
-vim.o.termguicolors = true
-
 local opt = vim.opt
 local o = vim.o
 local g = vim.g
+
+o.termguicolors = true
+
+g.mapleader = " "
+g.maplocalleader = "\\"
 
 o.cursorlineopt = "both" -- to enable cursorline!
 vim.opt.relativenumber = true
