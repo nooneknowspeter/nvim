@@ -15,7 +15,7 @@ map("n", "<leader>dbc", "<cmd>DapClearBreakpoints<CR>", { desc = "Debug Toggle B
 
 map("n", "<leader>dbb", "<cmd>DapContinue<CR>", { desc = "Debug Continue" })
 
-map("n", "<leader>dbss", "<cmd>DapStepOver<CR>", { desc = "Debug Step Over" })
+map("n", "<leader>dbsO", "<cmd>DapStepOver<CR>", { desc = "Debug Step Over" })
 
 map("n", "<leader>dbsi", "<cmd>DapStepInto<CR>", { desc = "Debug Step Into" })
 
