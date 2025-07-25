@@ -20,14 +20,13 @@ return {
 
 	{
 		"jay-babu/mason-nvim-dap.nvim",
-		dependencies = "mason-org/mason.nvim",
-		cmd = { "DapInstall", "DapUninstall" },
-		opts = {
-			automatic_installation = true,
-			handlers = {},
-			ensure_installed = {},
+		dependencies = {
+			"mason-org/mason.nvim",
+			"mfussenegger/nvim-dap",
 		},
-		config = function() end,
+		config = function()
+			require("configs.mason-nvim-dap")
+		end,
 	},
 
 	{
