@@ -6,6 +6,11 @@ return {
     dependencies = {
       "jmbuhr/otter.nvim",
       "nvim-treesitter/nvim-treesitter",
+      {
+        "GCBallesteros/jupytext.nvim",
+        config = true,
+        lazy = false,
+      },
     },
   },
 }
