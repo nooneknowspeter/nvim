@@ -26,5 +26,8 @@ return {
         lazy = false,
       },
     },
+    config = function()
+      require("configs.quarto-nvim")
+    end,
   },
 }
