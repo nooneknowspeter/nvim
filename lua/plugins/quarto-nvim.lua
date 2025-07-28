@@ -1,8 +1,9 @@
 return {
   {
     "quarto-dev/quarto-nvim",
-    enabled = false,
+    enabled = true,
     event = "VeryLazy",
+    ft = { "quarto", "markdown" },
     dependencies = {
       "jmbuhr/otter.nvim",
       "nvim-treesitter/nvim-treesitter",
