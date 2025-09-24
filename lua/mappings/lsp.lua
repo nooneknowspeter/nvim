@@ -1,7 +1,9 @@
 local map = vim.keymap.set
 local del = vim.keymap.del
 
-map("n", "K", vim.lsp.buf.hover, { desc = "Hover" })
+map("n", "K", function()
+	vim.lsp.buf.hover({ border = "single" })
+end, { desc = "Hover" })
 
 map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "LSP diagnostic loclist" })
 
