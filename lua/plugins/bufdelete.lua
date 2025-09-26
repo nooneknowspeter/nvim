@@ -1,5 +1,5 @@
 return {
-  "famiu/bufdelete.nvim",
-  enabled = true,
-  event = "VeryLazy",
+	"famiu/bufdelete.nvim",
+	enabled = true,
+	event = "VeryLazy",
 }

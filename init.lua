@@ -5,7 +5,7 @@ require("options")
 
 -- load mappings
 vim.schedule(function()
-  require("mappings")
+	require("mappings")
 end)
 
 -- lazyvim package manager

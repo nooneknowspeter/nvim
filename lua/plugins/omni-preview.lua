@@ -4,7 +4,7 @@ return {
 		enabled = true,
 		dependencies = {
 			{ "chomosuke/typst-preview.nvim", lazy = true },
-			{ "hat0uma/csvview.nvim",         lazy = true },
+			{ "hat0uma/csvview.nvim", lazy = true },
 			{ "tigion/nvim-asciidoc-preview", lazy = true },
 			{
 				"iamcco/markdown-preview.nvim",
@@ -24,7 +24,7 @@ return {
 		end,
 		keys = {
 			{ "<leader>po", "<cmd>OmniPreview start<CR>", desc = "OmniPreview Start" },
-			{ "<leader>px", "<cmd>OmniPreview stop<CR>",  desc = "OmniPreview Stop" },
+			{ "<leader>px", "<cmd>OmniPreview stop<CR>", desc = "OmniPreview Stop" },
 		},
 	},
 }

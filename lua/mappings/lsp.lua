@@ -20,17 +20,17 @@ map("n", "<leader>wa", vim.lsp.buf.add_workspace_folder, { desc = "Add workspace
 map("n", "<leader>wr", vim.lsp.buf.remove_workspace_folder, { desc = "Remove workspace folder" })
 
 map("n", "<leader>wl", function()
-  print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+	print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
 end, { desc = "List workspace folders" })
 
 map("n", "<leader>D", vim.lsp.buf.type_definition, { desc = "Go to type definition" })
 
 map({ "n", "v" }, "<leader>ca", function()
-  vim.lsp.buf.code_action()
+	vim.lsp.buf.code_action()
 end, { desc = "Code action" })
 
 map("n", "gr", vim.lsp.buf.references, { desc = "Show references" })
 
 map("n", "<leader>dd", function()
-  vim.diagnostic.open_float()
+	vim.diagnostic.open_float()
 end, { desc = "Show diagnostics Under Cursor" })

@@ -1,7 +1,7 @@
 return {
-  {
-    "nvzone/menu",
-    enabled = true,
-    lazy = true,
-  },
+	{
+		"nvzone/menu",
+		enabled = true,
+		lazy = true,
+	},
 }

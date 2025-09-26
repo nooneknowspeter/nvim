@@ -1,8 +1,8 @@
 return {
-  -- undotree
-  {
-    "mbbill/undotree",
-    enabled = true,
-    event = "VeryLazy",
-  },
+	-- undotree
+	{
+		"mbbill/undotree",
+		enabled = true,
+		event = "VeryLazy",
+	},
 }

@@ -1,10 +1,9 @@
 return {
-  -- nvim webdev icons
-  {
-    "nvim-tree/nvim-web-devicons",
+	-- nvim webdev icons
+	{
+		"nvim-tree/nvim-web-devicons",
 
-    enabled = true,
-    opts = {}
-
-  },
+		enabled = true,
+		opts = {},
+	},
 }

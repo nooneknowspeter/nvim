@@ -1,12 +1,12 @@
 return {
-  {
-    "goolord/alpha-nvim",
-    dependencies = {
-      "nvim-tree/nvim-web-devicons",
-    },
+	{
+		"goolord/alpha-nvim",
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
+		},
 
-    config = function()
-      require("configs.alpha")
-    end,
-  }
+		config = function()
+			require("configs.alpha")
+		end,
+	},
 }
