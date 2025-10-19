@@ -10,6 +10,8 @@ require("mappings.neo-tree")
 
 require("mappings.none-ls")
 
+require("mappings.todo")
+
 require("mappings.transparent")
 
 require("mappings.telescope")
