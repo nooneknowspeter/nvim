@@ -1,6 +1,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+vim.o.spell = true
+vim.o.spelllang = "en_us"
+
 vim.o.cursorlineopt = "both" -- to enable cursorline!
 vim.opt.relativenumber = true
 
