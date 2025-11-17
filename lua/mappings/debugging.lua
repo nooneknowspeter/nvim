@@ -9,17 +9,17 @@ map("n", "<leader>dx", function()
 	require("dapui").close({ terminateDebuggee = true })
 end, { desc = "Dap UI Close", noremap = true, silent = true })
 
-map("n", "<leader>dbp", "<cmd>DapToggleBreakpoint<CR>", { desc = "Debug Toggle Breakpoint" })
+map("n", "<leader>dp", "<cmd>DapToggleBreakpoint<CR>", { desc = "Debug Toggle Breakpoint" })
 
-map("n", "<leader>dbc", "<cmd>DapClearBreakpoints<CR>", { desc = "Debug Toggle Breakpoint" })
+map("n", "<leader>dc", "<cmd>DapClearBreakpoints<CR>", { desc = "Clear Debug Breakpoints" })
 
-map("n", "<leader>dbb", "<cmd>DapContinue<CR>", { desc = "Debug Continue" })
+map("n", "<leader>db", "<cmd>DapContinue<CR>", { desc = "Debug" })
 
-map("n", "<leader>dbsO", "<cmd>DapStepOver<CR>", { desc = "Debug Step Over" })
+map("n", "<leader>dj", "<cmd>DapStepOver<CR>", { desc = "Debug Step Over" })
 
-map("n", "<leader>dbsi", "<cmd>DapStepInto<CR>", { desc = "Debug Step Into" })
+map("n", "<leader>dl", "<cmd>DapStepInto<CR>", { desc = "Debug Step Into" })
 
-map("n", "<leader>dbso", "<cmd>DapStepOut<CR>", { desc = "Debug Step Out" })
+map("n", "<leader>dh", "<cmd>DapStepOut<CR>", { desc = "Debug Step Out" })
 
 -- vscode debugging shortcuts
 map("n", "<F5>", "<cmd>DapContinue<CR>", { desc = "Debug Continue" })
